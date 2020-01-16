@@ -1,16 +1,14 @@
-import 'package:bmi_calculator/components/bmi_calculator.dart';
+
 import "package:flutter/material.dart";
 
 class Result extends StatelessWidget {
-   final int weight;
-   final int height;
-  Result({this.height,this.weight});
    
-
+   final String textResult;
+   final String textAdvice;
+   final String result;
+  Result({this.textResult,this.textAdvice,this.result});
   @override
   Widget build(BuildContext context) {
-    Calculate calculate = Calculate(height: height,weight: weight);
-
     return Scaffold(
       appBar: AppBar(
         title: Text("BMI RESULT"),
@@ -38,7 +36,7 @@ class Result extends StatelessWidget {
                 children: <Widget>[
                   Padding(
                     padding: const EdgeInsets.only(top:8.0,bottom: 8.0),
-                    child: Text("NORMAL",
+                    child: Text(textResult,
                     textAlign:TextAlign.center,
                     style:TextStyle(
                       color:Colors.green,
@@ -48,7 +46,7 @@ class Result extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Text(calculate.getResult(),
+                    child: Text(result,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 60.0,
@@ -57,7 +55,7 @@ class Result extends StatelessWidget {
                     ),
                     ),
                   ),
-                  Text(calculate.getTextResult(),
+                  Text(textAdvice,
                   textAlign: TextAlign.center,
                   style: TextStyle(fontWeight: FontWeight.w900,
                   fontSize: 50.0,
