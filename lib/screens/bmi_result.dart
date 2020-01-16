@@ -1,4 +1,6 @@
 
+
+
 import "package:flutter/material.dart";
 
 class Result extends StatelessWidget {
@@ -66,7 +68,23 @@ class Result extends StatelessWidget {
                 ],
               ),
             ),
-          )
+          ),
+          GestureDetector(
+          onTap: (){
+            Navigator.pop(context);
+          },
+          child: Container(
+            width: double.infinity,
+            padding: EdgeInsets.all(25.0),
+            color:  Color(0xFFEB1555),
+            child: Text("RE-CALCULATE",
+            textAlign: TextAlign.center,
+            style: TextStyle( 
+              fontSize:40.0
+            )
+            ),
+          ),
+        )
 
         ],
       )
