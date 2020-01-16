@@ -43,6 +43,7 @@ class _InputPageState extends State<InputPage> {
         title: Text("BMI CALCULATOR"),
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
          Expanded(
                     child: Row(
@@ -253,7 +254,20 @@ class _InputPageState extends State<InputPage> {
                 ),
            ],
          ),
-             )
+        ),
+        GestureDetector(
+          onTap: (){},
+          child: Container(
+            padding: EdgeInsets.all(18.0),
+            color:  Color(0xFFEB1555),
+            child: Text("CALCULATE",
+            textAlign: TextAlign.center,
+            style: TextStyle( 
+              fontSize:40.0
+            )
+            ),
+          ),
+        )
          
         ],
       )
