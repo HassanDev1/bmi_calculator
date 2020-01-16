@@ -57,7 +57,7 @@ class Result extends StatelessWidget {
                     ),
                     ),
                   ),
-                  Text("You have normal weight Good Job!",
+                  Text(calculate.getTextResult(),
                   textAlign: TextAlign.center,
                   style: TextStyle(fontWeight: FontWeight.w900,
                   fontSize: 50.0,
