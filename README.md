@@ -1,5 +1,3 @@
-![App Brewery Banner](https://github.com/londonappbrewery/Images/blob/master/AppBreweryBanner.png)
-
 
 # BMI Calculator 💪
 
@@ -12,7 +10,7 @@ The objective  is to look at how we can customize Flutter Widgets to achieve our
 
 I am creating a Body Mass Index Calculator inspired by the beautiful designs made by [Ruben Vaalt](https://dribbble.com/shots/4585382-Simple-BMI-Calculator). It will be a multi screen app with simple functionality but full-on custom styling. 
 
-![Finished App](https://github.com/londonappbrewery/Images/blob/master/bmi-calc-demo.gif)
+![Snapshot of the Finished App](https://github.com/Hassan78/images/blob/master/bmi.gif)
 
 ## What I learned
 
@@ -29,4 +27,4 @@ I am creating a Body Mass Index Calculator inspired by the beautiful designs mad
 
 
 
-![End Banner](https://github.com/londonappbrewery/Images/blob/master/readme-end-banner.png)# bmi_calculator
+
